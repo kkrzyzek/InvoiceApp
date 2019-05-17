@@ -1,0 +1,32 @@
+#
+# generated on 2019/05/17 11:19:54
+#
+# --table-start--
+dataClass=com.example.invoiceapp.InvoiceInDb
+tableName=invoiceindb
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=sellerName
+# --field-end--
+# --field-start--
+fieldName=sellerNip
+# --field-end--
+# --field-start--
+fieldName=buyerName
+# --field-end--
+# --field-start--
+fieldName=buyerNip
+# --field-end--
+# --field-start--
+fieldName=date
+# --field-end--
+# --field-start--
+fieldName=price
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

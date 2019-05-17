@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/date_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="23.06.2019"/>
+
+    <TextView
+        android:id="@+id/seller_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Imie i nazwisko sprzedawcy: Jan Kowalski!"/>
+
+    <TextView
+        android:id="@+id/seller_nip_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="NIP sprzedawcy: 123-123-123-123"/>
+
+    <TextView
+        android:id="@+id/buyer_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Imie i nazwisko sprzedawcy: Jan Kowalski!"/>
+
+    <TextView
+        android:id="@+id/buyer_nip_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="NIP sprzedawcy: 123-123-123-123"/>
+
+    <TextView
+        android:id="@+id/price_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="24sp"
+        tools:text="23 zl"/>
+
+</LinearLayout>

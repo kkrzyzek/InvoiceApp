@@ -3,4 +3,21 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <!--<color name="colorPrimary">#616161</color>-->
+    <!--<color name="colorPrimaryDark">#212121</color>-->
+    <!--<color name="colorAccent">#0099cc</color>-->
+
+    <color name="tab_background_unselected">#E0E0E0</color>
+    <color name="tab_background_selected">#9E9E9E</color>
+
+    <color name="negative">#D50000</color>
+    <color name="default_background">#FAFAFA</color>
+
+    <color name="positive">#ff669900</color>
+
+    <color name="normal_hearing">#33691E</color>
+    <color name="mild_hearing">#CDDC39</color>
+    <color name="moderate_hearing">#00B0FF</color>
+    <color name="severe_hearing">#FF6D00</color>
+    <color name="profound_hearing">#D50000</color>
 </resources>

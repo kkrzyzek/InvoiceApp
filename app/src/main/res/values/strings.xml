@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">InvoiceApp</string>
+    <string name="title_activity_add_invoice">Dodaj Fakturę</string>
+    <string name="title_activity_invoices">Faktury</string>
+    <string name="title_activity_seller">Sprzedawca</string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>
