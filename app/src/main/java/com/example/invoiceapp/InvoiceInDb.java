@@ -11,9 +11,13 @@ public class InvoiceInDb {
     @DatabaseField
     String sellerNip;
     @DatabaseField
+    String sellerAddress;
+    @DatabaseField
     String buyerName;
     @DatabaseField
     String buyerNip;
+    @DatabaseField
+    String buyerAddress;
 
     @DatabaseField
     String date;
@@ -25,11 +29,14 @@ public class InvoiceInDb {
         //empty constructor - required by ormlite
     }
 
-    public InvoiceInDb(String sellerName, String sellerNip, String buyerName, String buyerNip, double price, String date) {
+    public InvoiceInDb(String sellerName, String sellerNip, String sellerAddress, String buyerName,
+                       String buyerNip, String buyerAddress, double price, String date) {
         this.sellerName = sellerName;
         this.sellerNip = sellerNip;
+        this.sellerAddress = sellerAddress;
         this.buyerName = buyerName;
         this.buyerNip = buyerNip;
+        this.buyerAddress = buyerAddress;
         this.price = price;
         this.date = date;
     }
@@ -46,8 +53,16 @@ public class InvoiceInDb {
         return buyerNip;
     }
 
+    public String getBuyerAddress() {
+        return buyerAddress;
+    }
+
     public String getSellerNip() {
         return sellerNip;
+    }
+
+    public String getSellerAddress() {
+        return sellerAddress;
     }
 
     public double getPrice() {
@@ -68,8 +83,10 @@ public class InvoiceInDb {
                 "id=" + id +
                 ", sellerName='" + sellerName + '\'' +
                 ", sellerNip='" + sellerNip + '\'' +
+                ", sellerAddress='" + sellerAddress + '\'' +
                 ", buyerName=" + buyerName +
                 ", buyerNip='" + buyerNip + '\'' +
+                ", buyerAddress='" + buyerAddress + '\'' +
                 ", date=" + date + '\'' +
                 ", price=" + price +
                 '}';

@@ -41,7 +41,10 @@ public class InvoiceAdapter extends ArrayAdapter<Invoice> {
             TextView invoiceDate = listItemView.findViewById(R.id.invoice_date_text);
             invoiceDate.setText(currentInvoice.getDate());
 
+            TextView invoicePrice = listItemView.findViewById(R.id.price_text);
+            invoicePrice.setText("Cena: " + currentInvoice.getPrice());
         }
+
 
         return listItemView;
     }

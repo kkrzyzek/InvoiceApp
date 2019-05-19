@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.j256.ormlite.android.apptools.OpenHelperManager;
@@ -21,6 +22,7 @@ public class InvoicesActivity extends AppCompatActivity {
     private DbHelper mDbHelper;
 
     private ArrayList<Invoice> invoices;
+    private LinearLayout noInvoicesView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +30,14 @@ public class InvoicesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_invoices);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        noInvoicesView = findViewById(R.id.noinvoices_view);
+
         //TODO: read from DB invoices data and save it in invoices array!
         invoices = readAllInvoicesFromDb();
+
+        if (!invoices.isEmpty()) {
+            noInvoicesView.setVisibility(View.GONE);
+        }
 
         //set adapter and populate ListView with data
         ListView invoiceListView = findViewById(R.id.invoices_list_view);
@@ -53,7 +61,6 @@ public class InvoicesActivity extends AppCompatActivity {
 
     }
 
-
     @Override
     public boolean onSupportNavigateUp() {
         onBackPressed();
@@ -73,8 +80,10 @@ public class InvoicesActivity extends AppCompatActivity {
             tempInvoice = new Invoice(
                     allInvoicesDb.get(i).getSellerName(),
                     allInvoicesDb.get(i).getSellerNip(),
+                    allInvoicesDb.get(i).getSellerAddress(),
                     allInvoicesDb.get(i).getBuyerName(),
                     allInvoicesDb.get(i).getBuyerNip(),
+                    allInvoicesDb.get(i).getBuyerAddress(),
                     allInvoicesDb.get(i).getPrice(),
                     allInvoicesDb.get(i).getDate());
             tempInvoice.setId(allInvoicesDb.get(i).getId());

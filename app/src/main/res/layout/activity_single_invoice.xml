@@ -1,47 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:id="@+id/layout_main">
 
-    <TextView
-        android:id="@+id/date_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="23.06.2019"/>
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
-    <TextView
-        android:id="@+id/seller_name_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="Imie i nazwisko sprzedawcy: Jan Kowalski!"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/seller_nip_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="NIP sprzedawcy: 123-123-123-123"/>
+            <TextView
+                android:id="@+id/invoice_numb_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                tools:text="Faktura nr 05"/>
 
-    <TextView
-        android:id="@+id/buyer_name_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="Imie i nazwisko sprzedawcy: Jan Kowalski!"/>
+            <TextView
+                android:id="@+id/date_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp"
+                tools:text="Data: 25.06.2019"/>
 
-    <TextView
-        android:id="@+id/buyer_nip_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="NIP sprzedawcy: 123-123-123-123"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/tab_background_unselected"
+                android:textSize="18sp"
+                android:text="SPRZEDAWCA"
+                android:layout_marginBottom="6dp"/>
 
-    <TextView
-        android:id="@+id/price_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textSize="24sp"
-        tools:text="23 zl"/>
+            <TextView
+                android:id="@+id/seller_name_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="6dp"
+                tools:text="Imie i nazwisko sprzedawcy: Jan Kowalski!"/>
 
-</LinearLayout>
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:paddingTop="5dip"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/seller_address_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="6dp"
+                tools:text="Adres Jana Kowalskiego!"/>
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:paddingTop="5dip"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/seller_nip_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="6dp"
+                tools:text="NIP sprzedawcy: 123-123-123-123"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/tab_background_unselected"
+                android:textSize="18sp"
+                android:text="NABYWCA"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:id="@+id/buyer_name_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="6dp"
+                tools:text="Imie i nazwisko"/>
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:paddingTop="5dip"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/buyer_address_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="6dp"
+                tools:text="Adres"/>
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:paddingTop="5dip"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/buyer_nip_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="6dp"
+                tools:text="NIP"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/tab_background_unselected"
+                android:textSize="18sp"
+                android:text="USŁUGA"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Nazwa usługi: Przewóz osób"/>
+
+            <TextView
+                android:id="@+id/price_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="6dp"
+                tools:text="Cena usługi"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -4,23 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sprzedawca!"/>
-
-    <EditText
-        android:id="@+id/name_edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Wprowadz imie"/>
+        android:text="*Wszystkie pola są wymagane."
+        android:layout_marginBottom="6dp" />
 
-    <EditText
-        android:id="@+id/nip_edittext"
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/nameInputLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Wprowadz NIP"/>
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Imię i nazwisko/Nazwa Firmy"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/addressInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/address_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:layout_marginTop="6dp"
+            android:hint="Adres"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/nipInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/nip_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:inputType="number"
+            android:hint="NIP"/>
+    </android.support.design.widget.TextInputLayout>
+
 
 </LinearLayout>
