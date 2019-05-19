@@ -12,12 +12,12 @@ App functionalities:
 
 ### Screenshots
 <p float="left">
-<img src="https://github.com/kkrzyzek/InvoiceApp/blob/master/Screenshot_2019-05-19-22-45-42-228_com.example.invoiceapp.png" width="200"/>
-<img src="https://github.com/kkrzyzek/InvoiceApp/blob/master/Screenshot_2019-05-19-22-46-30-104_com.example.invoiceapp.png" width="200"/>
-<img src="https://github.com/kkrzyzek/InvoiceApp/blob/master/Screenshot_2019-05-19-22-46-50-035_com.example.invoiceapp.png" width="200"/>
-<img src="https://github.com/kkrzyzek/InvoiceApp/blob/master/Screenshot_2019-05-19-22-47-49-589_com.example.invoiceapp.png" width="200"/>
-<img src="https://github.com/kkrzyzek/InvoiceApp/blob/master/Screenshot_2019-05-19-22-47-54-492_com.example.invoiceapp.png" width="200"/>
-<img src="https://github.com/kkrzyzek/InvoiceApp/blob/master/Screenshot_2019-05-19-22-48-22-655_com.google.android.apps.docs.png" width="200"/>
+<img src="https://github.com/kkrzyzek/InvoiceApp/blob/master/Screenshot_2019-05-19-22-45-42-228_com.example.invoiceapp.png" width="300"/>
+<img src="https://github.com/kkrzyzek/InvoiceApp/blob/master/Screenshot_2019-05-19-22-46-30-104_com.example.invoiceapp.png" width="300"/>
+<img src="https://github.com/kkrzyzek/InvoiceApp/blob/master/Screenshot_2019-05-19-22-46-50-035_com.example.invoiceapp.png" width="300"/>
+<img src="https://github.com/kkrzyzek/InvoiceApp/blob/master/Screenshot_2019-05-19-22-47-49-589_com.example.invoiceapp.png" width="300"/>
+<img src="https://github.com/kkrzyzek/InvoiceApp/blob/master/Screenshot_2019-05-19-22-47-54-492_com.example.invoiceapp.png" width="300"/>
+<img src="https://github.com/kkrzyzek/InvoiceApp/blob/master/Screenshot_2019-05-19-22-48-22-655_com.google.android.apps.docs.png" width="300"/>
 </p>
 
 ## Libraries
