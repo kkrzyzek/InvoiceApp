@@ -23,9 +23,10 @@ App functionalities:
 ## Example UMLs
 <p float="left">
 <img src="https://github.com/kkrzyzek/InvoiceApp/blob/master/umlInvoice.bmp" width="300"/>
+</p>
+<p float="left">
 <img src="https://github.com/kkrzyzek/InvoiceApp/blob/master/umlData.bmp" width="300"/>
 </p>
-
 
 ## Libraries
 
