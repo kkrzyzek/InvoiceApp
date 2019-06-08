@@ -20,9 +20,9 @@ App functionalities:
 <img src="https://github.com/kkrzyzek/InvoiceApp/blob/master/Screenshot_2019-05-19-22-48-22-655_com.google.android.apps.docs.png" width="300"/>
 </p>
 
-## Example UMLs
+## Example Class Diagrams (UMLs)
 <p float="left">
-<img src="https://github.com/kkrzyzek/InvoiceApp/blob/master/umlInvoice.bmp" width="300"/>
+<img src="https://github.com/kkrzyzek/InvoiceApp/blob/master/umlInvoice.bmp" height="300"/>
 </p>
 <p float="left">
 <img src="https://github.com/kkrzyzek/InvoiceApp/blob/master/umlData.bmp" width="300"/>
@@ -32,11 +32,6 @@ App functionalities:
 
 * [iText](https://github.com/itext) - pdf generation
 * [OrmLite](http://ormlite.com/) - data persistence (local SQLite DB)
-
-## Author
-
-* **Krzysztof Krzyzek** - [LinkedIn](https://www.linkedin.com/in/kkrzyzek/)
-
 
 ## License
 
